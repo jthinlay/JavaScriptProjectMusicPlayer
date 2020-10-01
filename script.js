@@ -47,6 +47,7 @@ let i = 0;
 // Previous Song
 function prevSong(){
     i--;
+    isPlaying = true;
     if(i < 0){ 
         i = Songs.length -1;
     }
@@ -57,6 +58,7 @@ function prevSong(){
 // Next Song
 function nextSong(){
     i++;
+    isPlaying = true;
     if(i > songs.length - 1){ 
          i = 0;
     }
@@ -66,7 +68,7 @@ function nextSong(){
 }
 // Update Progress Bar & Time
 function updateProgressBar(event){
-    
+    console.log(event); 
     if(isPlaying){
         const {duration, currentTime } = event.srcElement;
         //Update progress bar width
@@ -106,3 +108,4 @@ nextBtn.addEventListener('click', nextSong);
 music.addEventListener('ended', nextSong);
 music.addEventListener('timeupdate', updateProgressBar);
 progressContainer.addEventListener('click', setProgressBar);
+

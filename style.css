@@ -74,11 +74,11 @@ h3 {
 }
 
 .progress {
-  background: #242323;
+  background: red;
   border-radius: 5px;
   height: 100%;
   width: 0%;
-  transition: width 0.1s linear;
+  /* transition: width 0.1s linear; */
 }
 
 .duration-wrapper {
@@ -106,7 +106,6 @@ h3 {
 .fas:hover {
   filter: brightness(80%);
 }
-
 
 .main-button {
   font-size: 40px;
@@ -138,3 +137,4 @@ h3 {
     
   }
 }
+
