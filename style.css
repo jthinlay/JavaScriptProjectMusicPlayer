@@ -8,7 +8,7 @@ html {
 body {
   margin: 0;
   min-height: 100vh;
-  background: #000000;
+  background: #333222;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -29,7 +29,7 @@ body {
 .player-container{
   height: 500px;
   width: 400px;
-  background: #e7e7e7;
+  background: #131212;
   border-radius: 20px;
   box-shadow: 0 15px 30px 5px rgba(255, 255, 255, 0.3);
 }
@@ -46,14 +46,15 @@ body {
   height: 100%;
   width: 100%;
   object-fit: cover;
-  border-radius: 20px;
-  box-shadow: 0 5px 30px 5px rgba(255, 255, 255, 0.5);
+  border-radius: 20%;
+  box-shadow: 0 5px 30px 5px rgba(247, 244, 244, 0.5);
 }
 
 h2 {
   font-size: 25px;
   text-align: center;
   margin: 0;
+  color: #fff;
 }
 
 h3 {
@@ -61,6 +62,7 @@ h3 {
   text-align: center;
   font-weight: 400;
   margin: 5px 0 0;
+  color: #fff;
 }
 
 /* Progress */
@@ -106,12 +108,35 @@ h3 {
 .fas:hover {
   filter: brightness(80%);
 }
-
 .main-button {
   font-size: 40px;
   position: relative;
   top: 3px;
 }
+/* Volume */
+.fa-volume-up{
+  font-size: 15px;
+  margin-right: 0px;
+}
+.fa-volume-down {
+  font-size: 15px;
+  margin-right: 0px;
+}
+.volume-container{
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 100px;
+  bottom: -225px;
+  height: 20px;
+}
+.volume-container:hover .volume-control {
+ 
+  float: left;
+  display: flex;
+}
+
 
 /* Media Query: iPhone (Vertical) */
 @media screen and (max-width: 376px) {
